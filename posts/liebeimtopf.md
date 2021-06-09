@@ -1,6 +1,6 @@
 ---
-title: 'Guest Connect Website'
-date: '2021-05-01'
+title: 'Liebe im Topf'
+date: '2021-04-01'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
