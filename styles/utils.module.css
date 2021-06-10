@@ -79,3 +79,88 @@
     background: lightgrey;
     height: 400px;
 }
+
+.navbar {
+    display: flex;
+}
+
+.navbar div {
+    margin-left: 15px;
+    position: relative;
+}
+
+.navbar div:hover:after {
+    width: 100%;
+}
+
+.navbar div:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: 2px;
+    content: "";
+    width: 0;
+    transition: 300ms ease-in-out;
+
+}
+
+.button {
+    background: var(--primary);
+    color: #fff;
+    padding: 13px 23px;
+    border-radius: 5px;
+    margin-left: 10%;
+    transition: 300ms ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.8;
+    color: white;
+    text-decoration: none;
+
+}
+
+.about_text {
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.about_text_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.subheading {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.style_h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.style_h3 {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.heading_wrapper {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.skill_item {
+    background: var(--bg-color);
+    padding: 10%;
+}

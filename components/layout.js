@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import NavBar from "./navBar"
+import navButtons from "../config/navButtons"
 
 const name = 'Selina Julia'
 export const siteTitle = 'Next.js Sample Website'
@@ -34,7 +36,7 @@ export default function Layout({children, home}) {
             <header className={styles.header}>
                 <div className={utilStyles.headertop}>
                     <div>{name}</div>
-                    <div>Menü</div>
+                    <div><NavBar navButtons={navButtons} /></div>
                 </div>
                 {home ? (
                     <>
@@ -47,23 +49,7 @@ export default function Layout({children, home}) {
                     </>
                 ) : (
                     <>
-                        <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/design.svg"
-                                    className={utilStyles.borderCircle}
-                                    height={108}
-                                    width={108}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
-                            </Link>
-                        </h2>
+
                     </>
                 )}
             </header>

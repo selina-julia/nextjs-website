@@ -28,7 +28,7 @@ export default function Home({allPostsData}) {
                                 <div className={utilStyles.project_image}>
                                     bild.
                                 </div>
-                                <Link href={`/posts/${id}`}>
+                                <Link href={`/projects/${id}`}>
                                     <a>{title}</a>
                                 </Link>
                                 <br/>
