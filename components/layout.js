@@ -36,13 +36,35 @@ export default function Layout({children, home}) {
             <header className={styles.header}>
                 <div className={utilStyles.headertop}>
                     <div>{name}</div>
-                    <div><NavBar navButtons={navButtons} /></div>
+                    <div>
+                        <nav>
+                            {/*<input type="checkbox" id="nav" className="hidden"/>
+                            <label htmlFor="nav" className="nav-open"><i></i><i></i><i></i></label>*/}
+                            <NavBar navButtons={navButtons}/>
+                        </nav>
+                    </div>
+
+                    {/*
+                      <nav>
+                        <input type="checkbox" id="nav" class="hidden"/>
+                        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                        <div class="nav-container">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="overview.html">Gsund & Guad</a></li>
+                                <li><a class="active" href="about_us.html">Über uns</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    */}
                 </div>
                 {home ? (
                     <>
                         <div className={utilStyles.headerbottom}>
-                            <p className={utilStyles.headingMd}>Hi, ich bin <span className={utilStyles.violet}>Selina</span></p>
-                            <h1 className={utilStyles.heading2Xl}>Gestaltung und Entwicklung digitaler Produkte und Erlebnisse</h1>
+                            <p className={utilStyles.headingMd}>Hi, ich bin <span
+                                className={utilStyles.violet}>Selina</span></p>
+                            <h1 className={utilStyles.heading2Xl}>Gestaltung und Entwicklung digitaler Produkte und
+                                Erlebnisse</h1>
                             <p className={utilStyles.headingMd}>UI/UX Designer und Frontend Developer</p>
                         </div>
 
@@ -63,6 +85,16 @@ export default function Layout({children, home}) {
                     </div>
                 )}
             </div>
+
+            <footer className={utilStyles.footer}>
+                <div>© 2021 Selina Julia. All rights reserved.</div>
+                <div className={utilStyles.footer_navlinks}>
+                    <a href="">Linkedin</a>
+                    <a href="">Github</a>
+                    <a href="">Impressum</a>
+                    <a href="">Datenschutz</a>
+                </div>
+            </footer>
         </div>
     )
 }

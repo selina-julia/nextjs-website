@@ -4,15 +4,18 @@ import utilStyles from '../styles/utils.module.css'
 import {getSortedPostsData} from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Image from 'next/image'
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
+    console.log(allPostsData)
     return {
         props: {
             allPostsData
         }
     }
 }
+
 
 export default function Home({allPostsData}) {
     return (
@@ -22,15 +25,26 @@ export default function Home({allPostsData}) {
                 <h2 className={utilStyles.headingLg}>Meine Projekte</h2>
 
                 <div className="row">
-                    {allPostsData.map(({id, date, title}) => (
+                    {allPostsData.slice(0,3).map(({id, date, title, image}) => (
                         <div className="col-md-6">
                             <div className={utilStyles.project_item}>
                                 <div className={utilStyles.project_image}>
-                                    bild.
+                                    <img src={image} />
                                 </div>
                                 <Link href={`/projects/${id}`}>
                                     <a>{title}</a>
                                 </Link>
+
+                                {/*<Image
+                                    priority
+                                    src={image}
+                                    className={utilStyles.borderCircle}
+                                    height={144}
+                                    width={144}
+                                    alt={name}
+                                />*/}
+
+
                                 <br/>
                                 <small className={utilStyles.lightText}>
                                     <Date dateString={date}/>

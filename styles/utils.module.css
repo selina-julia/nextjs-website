@@ -164,3 +164,19 @@
     background: var(--bg-color);
     padding: 10%;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3% 5%;
+}
+
+/*
+.footer_navlinks a {
+    padding-right: 3%;
+}*/
+
+.nav_label {
+    cursor: pointer;
+}

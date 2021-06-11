@@ -1,7 +1,7 @@
 ---
 title: 'Coronify Impfservice'
 date: '2021-05-22'
-imageUrl: '../public/images/design.svg'
+image: '/images/design.svg'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
