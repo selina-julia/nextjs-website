@@ -1,4 +1,4 @@
-import NavButton from "./NavButton";
+import NavButton from "./navButton";
 import utilStyles from '../styles/utils.module.css'
 
 const NavBar = props => (
