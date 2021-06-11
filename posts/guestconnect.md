@@ -1,7 +1,6 @@
 ---
 title: 'Guest Connect Website'
 date: '2021-05-01'
-imageUrl: '../public/images/design.svg'
 ---
 
 
