@@ -54,6 +54,10 @@ h3 {
     background: #FFF7ED;
 }
 
+.project_petrol {
+    background: #E6F0F3;
+}
+
 small {
     font-size: 12px;
     color: var(--text-color)!important;

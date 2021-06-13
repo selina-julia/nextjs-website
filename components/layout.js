@@ -8,7 +8,7 @@ import navButtons from "../config/navButtons"
 import NavLink from "./navLink"
 
 const name = 'Selina Julia'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Selina Julia'
 
 export default function Layout({children, home, about, projects}) {
     return (
@@ -17,7 +17,7 @@ export default function Layout({children, home, about, projects}) {
                 <link rel="icon" href="/favicon.ico"/>
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="Portfolio UI/UX und Web Development"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta
