@@ -19,14 +19,17 @@ export default function Projects({allPostsData}) {
     return (
         <Layout projects>
 
-            <h1>project page works</h1>
+            <h1>Meine <span className={utilStyles.violet}>Projekte.</span></h1>
+            <p>Während meines Studiums an der FH Hagenberg durfte ich bereits einige Projekte im Bereich Design und
+                Entwicklung umsetzen. Darüber hinaus habe ich auch bereits an ein paar Projekten im privaten Bereich
+                mitgewirkt. Ich stelle mich gerne neuen Herausforderungen, daher mache ich gerne Projekte in </p>
 
             <div className="row">
-                {allPostsData.map(({id, date, title, image}) => (
+                {allPostsData.map(({id, date, title, image, background}) => (
                     <div className="col-md-6">
-                        <div className={utilStyles.project_item}>
-                            <div className={utilStyles.project_image}>
-                                <img src={image} />
+                        <div className={`${utilStyles.project_item}`}>
+                            <div className={`${utilStyles.project_image} ${background}`}>
+                                <img src={image}/>
                             </div>
                             <Link href={`/projects/${id}`}>
                                 <a>{title}</a>

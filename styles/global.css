@@ -30,3 +30,15 @@ img {
     max-width: 100%;
     display: block;
 }
+
+.project_purple {
+    background: #F0EFFF;
+}
+
+.project_lightblue {
+    background: #EDF5FD;
+}
+
+.project_green {
+    background: #ECF1EE;
+}

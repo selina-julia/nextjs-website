@@ -1,7 +1,8 @@
 ---
 title: 'Bachelorarbeit Motion Experience'
-date: '2021-06-01'
-image: '/images/design.svg'
+date: '2021-04-01'
+image: '/images/motionexperience.png'
+background: 'project_purple'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.

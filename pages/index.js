@@ -25,10 +25,10 @@ export default function Home({allPostsData}) {
                 <h2 className={utilStyles.headingLg}>Meine Projekte</h2>
 
                 <div className="row">
-                    {allPostsData.slice(0,3).map(({id, date, title, image}) => (
+                    {allPostsData.slice(0,4).map(({id, date, title, image, background}) => (
                         <div className="col-md-6">
                             <div className={utilStyles.project_item}>
-                                <div className={utilStyles.project_image}>
+                                <div className={`${utilStyles.project_image} ${background}`}>
                                     <img src={image} />
                                 </div>
                                 <Link href={`/projects/${id}`}>

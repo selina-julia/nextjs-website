@@ -1,7 +1,8 @@
 ---
 title: 'Guest Connect Website'
-date: '2021-05-01'
-image: '/images/design.svg'
+date: '2021-06-01'
+image: '/images/guestconnect.png'
+background: 'project_lightblue'
 ---
 
 

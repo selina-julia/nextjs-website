@@ -66,6 +66,9 @@ export default function Layout({children, home}) {
                             <h1 className={utilStyles.heading2Xl}>Gestaltung und Entwicklung digitaler Produkte und
                                 Erlebnisse</h1>
                             <p className={utilStyles.headingMd}>UI/UX Designer und Frontend Developer</p>
+                            <Link href={`/about`}>
+                                <a className={utilStyles.button}>Mehr über mich</a>
+                            </Link>
                         </div>
 
                     </>
