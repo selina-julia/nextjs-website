@@ -272,7 +272,21 @@
 .message_section {
     background: var(--bg-color);
     padding: 2% 0;
+    margin-top: 10%;
 }
+
+.message_section .heading_wrapper .style_h2 {
+    margin-bottom: 2%!important;
+}
+
+.message_section p {
+    margin-bottom: 7%;
+}
+
+.message_section .subheading {
+    margin-bottom: 2%;
+}
+
 
 .float_right {
     float: right;
