@@ -1,14 +1,19 @@
 ---
-title: 'Coronify Impfservice'
-date: '2021-06-10'
-image: '/images/coronify.png'
-background: 'project_purple'
+title: 'Coronify Impfservice' 
+date: '2021-06-10' 
+image: '/images/coronify.png' 
+background: 'project_purple' 
 category: 'Angular SPA'
+link: 'https://angular-coronify.stackblitz.io/'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Coronify ist ein Projekt, dass in der Lehrveranstaltung Web-Entwicklung entstanden ist. Ziel war es, ein vereinfachtes
+Impfservice in Form einer web-basierten Applikation zu implementieren. Administratoren haben dabei die Möglichkeit,
+Impftermine und -orte im System anzulegen und Impfwillige können sich für eine Impfung anmelden.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+Vorgehensweise:
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+- Design der Anwendung mit Figma
+- Backend mit Laravel
+- Implementierung einer REST-Schnittstelle
+- Frontend mit Angular

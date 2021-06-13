@@ -208,6 +208,7 @@
 .skill_item {
     background: var(--bg-color);
     padding: 10%;
+    height: 100%;
 }
 
 .footer {
@@ -218,6 +219,7 @@
 
 .footer_navlinks a {
     display: block;
+    margin-left: 10px;
 }
 
 .footer_navlinks {
@@ -313,4 +315,8 @@
     height:35px;
     height:5px;
     width:0px;
+}
+
+.project_item_text {
+    margin-top: 5%;
 }

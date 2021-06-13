@@ -1,23 +1,20 @@
 ---
-title: 'Guest Connect Website'
-date: '2021-06-01'
-image: '/images/guestconnect.png'
+title: 'Guest Connect Website' 
+date: '2021-06-01' 
+image: '/images/guestconnect.png' 
 background: 'project_lightblue'
-category: 'Web design'
+category: 'Web design' 
+link: 'https://guest-connect.com'
 ---
 
+Für das Guest Connect GmbH durfte ich das Design und die Umsetzung der neuen Unternehmenswebsite übernehmen. Die Website
+wurde nach Wunsch mit Wordpress (Elementor) umgesetzt. Da ich noch nie mit Elementor gearbeitet habe, war es bei diesem
+Projekt sehr spannend, eine ganz andere Art der Web-Entwicklung kennenzulernen.
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Vorgehensweise:
 
-You can use Static Generation for many types of pages, including:
+- Design mit Adobe XD
+- Umsetzung mit Wordpress
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
-
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+![NextJS logo](/images/guestconnect_typography.png "NextJS Logo")

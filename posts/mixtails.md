@@ -1,6 +1,9 @@
 ---
-title: 'Bachelorarbeit Motion Experience' date: '2021-04-01' image: '/images/motionexperience.png' background: '
-project_purple' category: 'UI/UX' link: 'https://motionexperience.selinajulia.com'
+title: 'Mixtails' 
+date: '2019-04-01' 
+image: '/images/mixtails.png' 
+background: 'project_orange' 
+category: 'UI/UX'
 ---
 
 Meine Bachelorarbeit habe ich über den Einfluss von Animationen im Web auf die wahrgenommene User Experience
@@ -21,3 +24,7 @@ Vorgehensweise:
 - Beschreibung des Zusammenhangs zwischen UX und Animationen
 - Erstellung von Guidelines zur Verbesserung der UX
 - Erstellung eines Prototypen zur Visualisierung der Guidelines
+
+
+
+![NextJS logo](/images/mixtails_screens.png "NextJS Logo")

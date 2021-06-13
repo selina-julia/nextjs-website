@@ -50,6 +50,10 @@ h3 {
     background: #ECF1EE;
 }
 
+.project_orange {
+    background: #FFF7ED;
+}
+
 small {
     font-size: 12px;
     color: var(--text-color)!important;
@@ -66,4 +70,8 @@ small {
     content: "";
     width: 100%!important;
     transition: 300ms ease-in-out;
+}
+
+article img {
+    margin: 5% 0;
 }

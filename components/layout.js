@@ -10,7 +10,7 @@ import NavLink from "./navLink"
 const name = 'Selina Julia'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({children, home}) {
+export default function Layout({children, home, about, projects}) {
     return (
         <div>
             <Head>
@@ -89,7 +89,7 @@ export default function Layout({children, home}) {
             </header>
             <div className={styles.container}>
                 <main>{children}</main>
-                {!home && (
+                {about || projects && (
                     <div className={styles.backToHome}>
                         <Link href="/">
                             <a>← Back to home</a>
