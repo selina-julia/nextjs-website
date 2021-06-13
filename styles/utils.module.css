@@ -1,9 +1,15 @@
 .heading2Xl {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 600;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+}
+
+@media(min-width: 900px) {
+    .heading2Xl {
+        font-size: 3.2rem;
+    }
 }
 
 .headingXl {
@@ -65,10 +71,21 @@
 }
 
 .headerbottom {
-    margin: 0 25%;
+    margin: 3% 5%;
     padding-top: 3%;
     text-align: center;
 }
+
+@media(min-width: 900px) {
+    .headerbottom {
+        margin: 3% 25% 7% 25%;
+    }
+}
+
+.headerbottom .about {
+    margin-bottom: 7%;
+}
+
 
 .project_item {
     margin-bottom: 15%;
@@ -76,27 +93,46 @@
 
 .project_image {
     width: 100%;
-    height: 400px;
+    height: 330px;
     display: flex;
     padding: 10%;
     justify-content: center;
     align-items: center;
 }
 
+@media(min-width: 900px) {
+    .project_image {
+        height: 400px;
+    }
+}
+
+
 .navbar {
     display: flex;
 }
 
-.navbar div {
+.navbar span {
     margin-left: 15px;
     position: relative;
 }
 
-.navbar div:hover:after {
+.navbar .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: 2px;
+    content: "";
+    width: 100%;
+    transition: 300ms ease-in-out;
+}
+
+.navbar span:hover:after {
     width: 100%;
 }
 
-.navbar div:after {
+.navbar span:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -113,6 +149,10 @@
     margin-left: 10%;
 }
 
+.about_button {
+    margin-top: 5%;
+}
+
 .button {
     background: var(--primary);
     color: #fff;
@@ -125,19 +165,9 @@
     opacity: 0.8;
     color: white;
     text-decoration: none;
-
 }
 
-.about_text {
-    margin-left: 10%;
-    margin-top: 3%;
-    margin-bottom: 5%;
-}
 
-.about_text_wrapper {
-    display: flex;
-    width: 100%;
-}
 
 .subheading {
     color: var(--primary);
@@ -162,8 +192,17 @@
 
 .heading_wrapper {
     text-align: center;
-    margin-top: 20%;
-    margin-bottom: 5%;
+    padding: 5% 0;
+}
+
+.message_section .heading_wrapper {
+    padding: 6% 5% 11% 5%;
+}
+
+@media(min-width: 900px) {
+    .message_section .heading_wrapper {
+        padding: 4% 32%;
+    }
 }
 
 .skill_item {
@@ -173,20 +212,91 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column-reverse;
     padding: 3% 5%;
 }
 
-/*
 .footer_navlinks a {
-    padding-right: 3%;
-}*/
+    display: block;
+}
+
+.footer_navlinks {
+    margin: 5% 0;
+}
+
+@media(min-width: 900px) {
+    .footer_navlinks {
+        display: flex;
+        margin: 0;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
 
 .nav_label {
     cursor: pointer;
 }
 
-.project_purple {
-    background: #F0EFFF;
+
+.project_intro {
+    width: 70%;
+}
+
+.project_intro p {
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.about_image {
+    margin-top: 30%;
+}
+
+.about_text {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.about_text_wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.message_section {
+    background: var(--bg-color);
+    padding: 2% 0;
+}
+
+.float_right {
+    float: right;
+}
+
+
+#skill_bar_wrapper {
+    padding: 5% 0;
+}
+
+.skillbar_container {
+    position: relative;
+    display: block;
+    margin-bottom: 35px;
+    width: 100%;
+    background-color: #666463;
+    background-color: #000;
+    height:35px;
+    height:5px;
+}
+
+.skills {
+    background: var(--primary);
+    height:35px;
+    height:5px;
+    width:0px;
 }

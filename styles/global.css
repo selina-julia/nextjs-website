@@ -2,6 +2,7 @@
     --primary: #4236FF;
     --white: #ffffff;
     --bg-color: #FBFBFF;
+    --text-color: #222;
 }
 
 html,
@@ -18,17 +19,23 @@ body {
 }
 
 a {
-    color: var(--primary);
+    color: var(--text-color);
     text-decoration: none;
+    transition: 300ms ease-in-out;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary);
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 .project_purple {
@@ -41,4 +48,22 @@ img {
 
 .project_green {
     background: #ECF1EE;
+}
+
+small {
+    font-size: 12px;
+    color: var(--text-color)!important;
+    padding-top: 10%!important;
+}
+
+.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: 2px;
+    content: "";
+    width: 100%!important;
+    transition: 300ms ease-in-out;
 }

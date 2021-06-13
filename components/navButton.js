@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 const NavButton = props => (
     <Link href={props.path}>
         <div className="NavButton">
-            <span className={utilStyles.nav_label}>{props.label}</span>
+            <span className={utilStyles.nav_label} activeClassName="active">{props.label}</span>
         </div>
     </Link>
 );

@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import NavBar from "./navBar"
 import navButtons from "../config/navButtons"
+import NavLink from "./navLink"
 
 const name = 'Selina Julia'
 export const siteTitle = 'Next.js Sample Website'
@@ -18,6 +19,7 @@ export default function Layout({children, home}) {
                     name="description"
                     content="Learn how to build a personal website using Next.js"
                 />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta
                     property="og:image"
                     content={`https://og-image.vercel.app/${encodeURI(
@@ -32,15 +34,22 @@ export default function Layout({children, home}) {
                     rel="stylesheet"/>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
                       integrity="undefined" crossOrigin="anonymous"/>
+
             </Head>
             <header className={styles.header}>
                 <div className={utilStyles.headertop}>
-                    <div>{name}</div>
                     <div>
-                        <nav>
-                            {/*<input type="checkbox" id="nav" className="hidden"/>
-                            <label htmlFor="nav" className="nav-open"><i></i><i></i><i></i></label>*/}
+                        <Link href={`/`}>{name}</Link>
+
+                    </div>
+                    <div>
+                       {/* <nav>
                             <NavBar navButtons={navButtons}/>
+                        </nav>*/}
+                        <nav>
+                            <NavLink className={utilStyles.nav_buttons}/>
+                            {/*{children}*/}
+
                         </nav>
                     </div>
 
@@ -63,11 +72,11 @@ export default function Layout({children, home}) {
                         <div className={utilStyles.headerbottom}>
                             <p className={utilStyles.headingMd}>Hi, ich bin <span
                                 className={utilStyles.violet}>Selina</span></p>
-                            <h1 className={utilStyles.heading2Xl}>Gestaltung und Entwicklung digitaler Produkte und
+                            <h1 className={utilStyles.heading2Xl}>Gestaltung und<br/>Entwicklung digitaler<br/>Produkte und
                                 Erlebnisse</h1>
-                            <p className={utilStyles.headingMd}>UI/UX Designer und Frontend Developer</p>
+                            <p className={`${utilStyles.headingMd} ${utilStyles.about}`}>UI/UX Designer und Frontend Developer</p>
                             <Link href={`/about`}>
-                                <a className={utilStyles.button}>Mehr über mich</a>
+                                <a className={`${utilStyles.button}`}>Mehr über mich</a>
                             </Link>
                         </div>
 
@@ -88,6 +97,26 @@ export default function Layout({children, home}) {
                     </div>
                 )}
             </div>
+            {home ? (
+                <>
+                    <section className={utilStyles.message_section}>
+                        <div className={utilStyles.heading_wrapper}>
+                            <p className={utilStyles.subheading}>Noch Fragen?</p>
+                            <h2 className={utilStyles.style_h2}>Schreib mir eine Nachricht</h2>
+                            <p>
+                                Falls du noch Fragen hast oder gemeinsam ein Projekt starten möchtest, kannst
+                                du mir jederzeit gerne eine Nachricht schreiben!</p>
+                            <Link href="mailto:selinaschindlauer@gmail.com">
+                                <a className={utilStyles.button}>Nachricht senden</a>
+                            </Link>
+                        </div>
+                    </section>
+                </>
+            ) : (
+                <>
+
+                </>
+            )}
 
             <footer className={utilStyles.footer}>
                 <div>© 2021 Selina Julia. All rights reserved.</div>

@@ -22,19 +22,21 @@ export default function Home({allPostsData}) {
         <Layout home>
 
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                <h2 className={utilStyles.headingLg}>Meine Projekte</h2>
 
                 <div className="row">
-                    {allPostsData.slice(0,4).map(({id, date, title, image, background}) => (
+                    {allPostsData.slice(0, 4).map(({id, date, title, image, background, category}) => (
                         <div className="col-md-6">
                             <div className={utilStyles.project_item}>
                                 <div className={`${utilStyles.project_image} ${background}`}>
-                                    <img src={image} />
+                                    <img src={image}/>
                                 </div>
+                                <small className={utilStyles.lightText}>
+                                    {/* <Date dateString={date}/>*/}
+                                    {category}
+                                </small> <br/>
                                 <Link href={`/projects/${id}`}>
-                                    <a>{title}</a>
+                                    <a><h3>{title}</h3></a>
                                 </Link>
-
                                 {/*<Image
                                     priority
                                     src={image}
@@ -45,10 +47,6 @@ export default function Home({allPostsData}) {
                                 />*/}
 
 
-                                <br/>
-                                <small className={utilStyles.lightText}>
-                                    <Date dateString={date}/>
-                                </small>
                             </div>
                         </div>
                     ))}
@@ -68,6 +66,9 @@ export default function Home({allPostsData}) {
                     ))}
                 </ul>*/}
             </section>
+            <Link href={`/projects`}>
+                <a className={utilStyles.button}>Alle Projekte ansehen</a>
+            </Link>
         </Layout>
     )
 }

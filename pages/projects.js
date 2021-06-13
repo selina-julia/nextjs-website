@@ -18,21 +18,28 @@ export async function getStaticProps() {
 export default function Projects({allPostsData}) {
     return (
         <Layout projects>
+            <div className={utilStyles.project_intro}>
+                <h1>Meine <span className={utilStyles.violet}>Projekte.</span></h1>
+                <p>Während meines Studiums an der FH Hagenberg durfte ich bereits einige Projekte im Bereich Design und
+                    Entwicklung umsetzen. Darüber hinaus habe ich auch bereits an ein paar Projekten im privaten Bereich
+                    mitgewirkt. Ich stelle mich gerne neuen Herausforderungen, daher mache ich gerne Projekte in </p>
 
-            <h1>Meine <span className={utilStyles.violet}>Projekte.</span></h1>
-            <p>Während meines Studiums an der FH Hagenberg durfte ich bereits einige Projekte im Bereich Design und
-                Entwicklung umsetzen. Darüber hinaus habe ich auch bereits an ein paar Projekten im privaten Bereich
-                mitgewirkt. Ich stelle mich gerne neuen Herausforderungen, daher mache ich gerne Projekte in </p>
+            </div>
 
             <div className="row">
-                {allPostsData.map(({id, date, title, image, background}) => (
+                {allPostsData.map(({id, date, title, image, background, category}) => (
                     <div className="col-md-6">
                         <div className={`${utilStyles.project_item}`}>
                             <div className={`${utilStyles.project_image} ${background}`}>
                                 <img src={image}/>
                             </div>
+
+                            <small className={utilStyles.lightText}>
+                                {/* <Date dateString={date}/>*/}
+                                {category}
+                            </small> <br/>
                             <Link href={`/projects/${id}`}>
-                                <a>{title}</a>
+                                <a><h3>{title}</h3></a>
                             </Link>
 
                             {/*<Image
@@ -46,9 +53,6 @@ export default function Projects({allPostsData}) {
 
 
                             <br/>
-                            <small className={utilStyles.lightText}>
-                                <Date dateString={date}/>
-                            </small>
                         </div>
                     </div>
                 ))}

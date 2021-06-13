@@ -3,6 +3,7 @@ title: 'Coronify Impfservice'
 date: '2021-06-10'
 image: '/images/coronify.png'
 background: 'project_purple'
+category: 'Angular SPA'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
