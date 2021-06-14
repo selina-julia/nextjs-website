@@ -18,4 +18,4 @@ Vorgehensweise:
 - Implementierung einer REST-Schnittstelle
 - Frontend mit Angular
 
-![NextJS logo](/images/coronify_screens.png "Coronify Design")
+![NextJS logo](/images/coronify.png "Coronify Design")

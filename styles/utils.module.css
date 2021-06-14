@@ -74,6 +74,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 3% 5% 0 5%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .headerbottom {
@@ -129,6 +130,7 @@
 
 .navbar {
     display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar span {
