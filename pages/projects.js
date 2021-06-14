@@ -22,7 +22,8 @@ export default function Projects({allPostsData}) {
                 <h1>Meine <span className={utilStyles.violet}>Projekte.</span></h1>
                 <p>Während meines Studiums an der FH Hagenberg durfte ich bereits einige Projekte im Bereich Design und
                     Entwicklung umsetzen. Darüber hinaus habe ich auch bereits an ein paar Projekten im privaten Bereich
-                    mitgewirkt. Ich stelle mich gerne neuen Herausforderungen, daher mache ich gerne Projekte in </p>
+                    mitgewirkt. Ich stelle mich gerne neuen Herausforderungen und lerne Neues kennen, besonders in
+                    Sachen Frameworks und Design-Trends.</p>
 
             </div>
 

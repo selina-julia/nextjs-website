@@ -269,6 +269,21 @@
     margin-bottom: 15%;
 }
 
+.about_image {
+    margin-top: 20%;
+}
+
+@media (min-width: 600px) {
+    .about_image {
+        margin-top: 40%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .about_image {
+        margin-top: 20%;
+    }
+}
 
 @media(min-width: 700px) {
     .project_intro {
@@ -280,9 +295,6 @@
     }
 }
 
-.about_image {
-    margin-top: 20%;
-}
 
 .about_text {
     margin-top: 5%;
@@ -414,4 +426,16 @@
     margin-right: 2%;
     margin-bottom: 2%;
     border-radius: 5px;
+}
+
+.icon svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+
+.skill_icon svg {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
 }

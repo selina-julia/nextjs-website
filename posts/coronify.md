@@ -3,7 +3,7 @@ title: 'Coronify Impfservice'
 date: '2021-06-10' 
 image: '/images/coronify.png' 
 background: 'project_purple' 
-category: 'Angular SPA'
+category: 'Web Development'
 link: 'https://angular-coronify.stackblitz.io/'
 ---
 

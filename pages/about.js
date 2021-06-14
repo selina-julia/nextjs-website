@@ -5,6 +5,8 @@ import utilStyles from '../styles/utils.module.css'
 import Image from 'next/image'
 import NextNprogress from 'nextjs-progressbar';
 import ProgressBar from 'progressbar.js'
+import {faCode, faPencilRuler} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 
 export default function About() {
@@ -31,8 +33,9 @@ export default function About() {
                     <div className={utilStyles.skill_item}>
                         <h3 className={utilStyles.style_h3}>Web Development</h3>
                         <p>
-                            Egal, ob Websites mit Wordpress oder Web Apps mit Angular oder React - ich setze deine Idee
-                            genau nach deinen Vorstellungen um.
+                            Egal, ob Websites mit Wordpress oder Web Apps mit Angular oder React - ich bin für jede
+                            Herausforderung offen und stürze mich gerne mal in ein Projekt, um neue Bereiche der
+                            Web-Entwicklung zu erkunden.
                         </p>
                     </div>
                 </div>
@@ -151,7 +154,7 @@ export default function About() {
             </div>
 
 
-{/*            <NextNprogress
+            {/*            <NextNprogress
                 color="#4236FF"
                 startPosition={0.3}
                 stopDelayMs={200}

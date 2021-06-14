@@ -132,7 +132,7 @@ export default function Layout({children, home, about, projects}) {
                 {about || projects && (
                     <div className={styles.backToHome}>
                         <Link href="/">
-                            <a>← Back to home</a>
+                            <a>← Zurück zur Startseite</a>
                         </Link>
                     </div>
                 )}

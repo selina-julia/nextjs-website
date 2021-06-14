@@ -5,6 +5,9 @@ import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import Link from "next/link";
 import styles from "../../components/layout.module.css";
+import { ReactElement } from 'react'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export async function getStaticProps({params}) {
     // Add the "await" keyword like this:
@@ -37,7 +40,7 @@ export default function Post({postData}) {
 
                     {postData.link && (
                         <Link href={postData.link} target="_blank">
-                            <a target="_blank"> | Link zum Projekt</a>
+                            <a target="_blank"> | Link zum Projekt <span className={utilStyles.icon}><FontAwesomeIcon icon={faPaperPlane} /></span></a>
                         </Link>
                     )}
 

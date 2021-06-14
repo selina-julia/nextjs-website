@@ -11,9 +11,6 @@ Vorgehensweise:
 - Umsetzung mit HTML, SCSS und JavaScript
 - Versionsverwaltung mit Git
 
-Team
-
-Vanessa Riener, Kerstin Hochreiter, Johanna Rammerstorfer
 
 ![NextJS logo](/images/liebeimtopf_screens.png "Liebe im Topf")
 
