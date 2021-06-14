@@ -358,10 +358,24 @@
     border-top: 1px solid rgba(0,0,0, 0.2);
     display: flex;
     align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .experience_wrapper p {
-    margin: 3% 0;
+    margin: 0;
+}
+
+@media (min-width: 900px) {
+    .experience_wrapper p {
+        margin: 3% 0;
+    }
+
+    .experience_wrapper > div {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }
 
 .experience_wrapper {
