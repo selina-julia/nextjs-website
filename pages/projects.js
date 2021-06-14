@@ -30,9 +30,13 @@ export default function Projects({allPostsData}) {
                 {allPostsData.map(({id, date, title, image, background, category}) => (
                     <div className="col-md-6">
                         <div className={`${utilStyles.project_item}`}>
-                            <div className={`${utilStyles.project_image} ${background}`}>
-                                <img src={image}/>
-                            </div>
+                            <Link href={`/projects/${id}`}>
+                                <a>
+                                    <div className={`${utilStyles.project_image} ${background}`}>
+                                        <img src={image}/>
+                                    </div>
+                                </a>
+                            </Link>
 
                             <small className={utilStyles.lightText}>
                                 {/* <Date dateString={date}/>*/}

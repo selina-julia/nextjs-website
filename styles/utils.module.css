@@ -88,7 +88,7 @@
 
 
 .project_item {
-    margin-bottom: 8%;
+    margin-bottom: 11%;
 }
 
 @media(min-width: 900px) {
@@ -105,11 +105,12 @@
     padding: 10%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 @media(min-width: 900px) {
     .project_image {
-        height: 400px;
+        height: 370px;
     }
 }
 
@@ -221,7 +222,6 @@
 
 .footer_navlinks a {
     display: block;
-    margin-left: 10px;
 }
 
 .footer_navlinks {
@@ -232,6 +232,10 @@
     .footer_navlinks {
         display: flex;
         margin: 0;
+    }
+
+    .footer_navlinks a {
+        margin-left: 10px;
     }
 
     .footer {

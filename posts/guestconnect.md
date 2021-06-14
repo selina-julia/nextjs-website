@@ -17,4 +17,6 @@ Vorgehensweise:
 - Umsetzung mit Wordpress
 
 
+![NextJS logo](/images/guestconnect_screens.png "Guest Connect Design")
+
 ![NextJS logo](/images/guestconnect_typography.png "NextJS Logo")

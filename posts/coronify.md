@@ -17,3 +17,5 @@ Vorgehensweise:
 - Backend mit Laravel
 - Implementierung einer REST-Schnittstelle
 - Frontend mit Angular
+
+![NextJS logo](/images/coronify_screens.png "Coronify Design")

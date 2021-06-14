@@ -15,3 +15,5 @@ Team
 
 Vanessa Riener, Kerstin Hochreiter, Johanna Rammerstorfer
 
+![NextJS logo](/images/liebeimtopf_screens.png "Liebe im Topf")
+
