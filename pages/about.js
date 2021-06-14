@@ -21,7 +21,7 @@ export default function About() {
             <div className="row">
                 <div className="col-md-6">
                     <div className={utilStyles.skill_item}>
-                        <h3 className={utilStyles.style_h3}>UI/UX Design</h3>
+                        <h3 className={utilStyles.headingMd}>UI/UX Design</h3>
                         <p>
                             Ich gestalte die User Experience von mobilen Applikationen bis hin zu Desktopanwendungen.
                             Dabei ist es mir wichtig, digitale Produkte zu entwickeln, die einfach zu bedienen, Spaß
@@ -31,7 +31,7 @@ export default function About() {
                 </div>
                 <div className="col-md-6">
                     <div className={utilStyles.skill_item}>
-                        <h3 className={utilStyles.style_h3}>Web Development</h3>
+                        <h3 className={utilStyles.headingMd}>Web Development</h3>
                         <p>
                             Egal, ob Websites mit Wordpress oder Web Apps mit Angular oder React - ich bin für jede
                             Herausforderung offen und stürze mich gerne mal in ein Projekt, um neue Bereiche der
