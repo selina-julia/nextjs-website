@@ -269,7 +269,7 @@
 }
 
 .about_image {
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .about_text {
@@ -281,6 +281,11 @@
     margin-top: 5%;
 }
 
+.about_text_wrapper {
+    display: flex;
+    width: auto;
+    margin: 15% 5% 5% 5%;
+}
 
 @media(min-width: 900px) {
     .about_text {
@@ -291,15 +296,13 @@
     .about_text_wrapper .button {
         margin-left: 10%;
     }
+
+    .about_text_wrapper {
+        margin: 5% 20%;
+    }
 }
 
 
-
-.about_text_wrapper {
-    display: flex;
-    width: 100%;
-    margin-bottom: 15%;
-}
 
 .message_section {
     background: var(--bg-color);

@@ -43,43 +43,83 @@ export default function Layout({children, home, about, projects}) {
 
                     </div>
                     <div>
-                       {/* <nav>
+                        {/* <nav>
                             <NavBar navButtons={navButtons}/>
                         </nav>*/}
                         <nav>
                             <NavLink className={utilStyles.nav_buttons}/>
                             {/*{children}*/}
-
                         </nav>
                     </div>
 
-                    {/*
-                      <nav>
-                        <input type="checkbox" id="nav" class="hidden"/>
-                        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
-                        <div class="nav-container">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="overview.html">Gsund & Guad</a></li>
-                                <li><a class="active" href="about_us.html">Über uns</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    */}
+
                 </div>
                 {home ? (
                     <>
                         <div className={utilStyles.headerbottom}>
                             <p className={utilStyles.headingMd}>Hi, ich bin <span
                                 className={utilStyles.violet}>Selina</span></p>
-                            <h1 className={utilStyles.heading2Xl}>Gestaltung und<br/>Entwicklung digitaler<br/>Produkte und
+                            <h1 className={utilStyles.heading2Xl}>Gestaltung und<br/>Entwicklung digitaler<br/>Produkte
+                                und
                                 Erlebnisse</h1>
-                            <p className={`${utilStyles.headingMd} ${utilStyles.about}`}>UI/UX Designer und Frontend Developer</p>
+                            <p className={`${utilStyles.headingMd} ${utilStyles.about}`}>UI/UX Designer und Frontend
+                                Developer</p>
                             <Link href={`/about`}>
                                 <a className={`${utilStyles.button}`}>Mehr über mich</a>
                             </Link>
                         </div>
 
+                    </>
+                ) : (
+                    <>
+
+                    </>
+                )}
+
+                {about ? (
+                    <>
+                        <div className={utilStyles.about_text_wrapper}>
+                            <div className="row">
+                                <div className="col-md-9">
+                                    <div><h1>Hi, ich bin <span className={utilStyles.violet}>Selina.</span></h1>
+
+                                        <p className={utilStyles.about_text}>Ich bin 22 Jahre alt und komme aus
+                                            Seewalchen am
+                                            Attersee,
+                                            in
+                                            Oberösterreich. Zurzeit studiere ich
+                                            Kommunikation, Wissen, Medien im 6. Semester an der FH Hagenberg. Ich hatte
+                                            schon immer
+                                            Spaß
+                                            an
+                                            kreativen und gestalterischen Arbeiten und durch mein Studium habe ich meine
+                                            Leidenschaft
+                                            für
+                                            UI/UX
+                                            Design und Web Entwicklung entdeckt. Während meiner Zeit an der FH sowie im
+                                            privaten
+                                            Bereich
+                                            durfte ich
+                                            bereits einige Projekte in diesem Bereich umsetzen.</p>
+
+                                        <Link href={`/projects`}>
+                                            <a className={utilStyles.button}>Projekte ansehen</a>
+                                        </Link></div>
+                                </div>
+                                <div className="col-md-3">
+                                    <div className={utilStyles.about_image}>
+                                        <Image
+                                            priority
+                                            src='/images/me.png'
+                                            className={utilStyles.borderCircle}
+                                            height={333}
+                                            width={333}
+                                            alt='Me'
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </>
                 ) : (
                     <>
@@ -121,10 +161,16 @@ export default function Layout({children, home, about, projects}) {
             <footer className={utilStyles.footer}>
                 <div>© 2021 Selina Julia. All rights reserved.</div>
                 <div className={utilStyles.footer_navlinks}>
-                    <a href="">Linkedin</a>
-                    <a href="">Github</a>
-                    <a href="">Impressum</a>
-                    <a href="">Datenschutz</a>
+                    <Link href={'https://www.linkedin.com/in/selina-julia-schindlauer-13aa091a1/'}>
+                        <a>Linkedin</a>
+                    </Link>
+                    <Link href={'https://github.com/selina-julia'}>
+                        <a>Github</a>
+                    </Link>
+                    <Link href={'/impressum'}>
+                        <a>Impressum</a>
+                    </Link>
+
                 </div>
             </footer>
         </div>
