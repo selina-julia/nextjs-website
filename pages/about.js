@@ -12,8 +12,8 @@ export default function About() {
         <Layout about>
 
             <div className={utilStyles.heading_wrapper}>
-                <p className={utilStyles.subheading}>Skills & Tools</p>
-                <h2 className={utilStyles.style_h2}>Was ich mache</h2>
+                <p className={utilStyles.subheading}>Was ich kann</p>
+                <h2 className={utilStyles.style_h2}>Skills & Tools</h2>
             </div>
 
             <div className="row">
@@ -38,27 +38,54 @@ export default function About() {
                 </div>
             </div>
 
+            <div className={utilStyles.tool_wrapper}>
+                <div className={utilStyles.tool_entry}>HTML</div>
+                <div className={utilStyles.tool_entry}>CSS (SASS, LESS)</div>
+                <div className={utilStyles.tool_entry}>JavaScript</div>
+                <div className={utilStyles.tool_entry}>PHP</div>
+                <div className={utilStyles.tool_entry}>Angular</div>
+                <div className={utilStyles.tool_entry}>React (Next.js)</div>
+                <div className={utilStyles.tool_entry}>Git</div>
+                <div className={utilStyles.tool_entry}>MySQL</div>
+                <div className={utilStyles.tool_entry}>Figma</div>
+                <div className={utilStyles.tool_entry}>Adobe XD</div>
+                <div className={utilStyles.tool_entry}>Adobe Illustrator</div>
+                <div className={utilStyles.tool_entry}>Adobe Photoshop</div>
+                <div className={utilStyles.tool_entry}>Adobe InDesign</div>
+                <div className={utilStyles.tool_entry}>Wordpress</div>
+                <div className={utilStyles.tool_entry}>Typo3</div>
+            </div>
+
             <div className={utilStyles.ausbildung_wrapper}>
 
-                <div className="row">
+                <div className={utilStyles.heading_wrapper}>
+                    <p className={utilStyles.subheading}>Was bisher geschah</p>
                     <h2 className={utilStyles.style_h2}>Ausbildung & Berufserfahrung</h2>
+                </div>
+
+                <div className="row">
                     <div className="col-md-6">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <p>Nach meiner Matura an der HAK Vöcklabruck, tauchte ich direkt ins Berufsleben an. Im Herbst
+                            2017 begann ich meinen ersten richtigen Job als Servicemitarbeiterin bei der HYPO
+                            Vöcklabruck. Dort verweilte ich ein Jahr, bis ich mich einer neuen Herausforderung stellte.
+                            <br/><br/>
+                            Im Herbst 2018 begann ich an der FH Hagenberg Kommunikation, Wissen, Medien (KWM) zu
+                            studieren, da
+                            ich mich sehr für Grafikdesign und Marketing interessierte. Schnell stellte sich heraus,
+                            dass KWM sehr viel mehr als das zu bieten hatte.
+                        </p>
                     </div>
                     <div className="col-md-6">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Nach einigen Projektarbeiten und
+                            meinem sechsmonatigen Berufspraktikum bei Atikon hatte ich meine Vorliebe für UI/UX Design
+                            und Web Entwicklung gefunden.
+                            Während meines Studiums war ich zudem nebenbei als Tutorin für Web-Programmierung
+                            (JavaScript und
+                            PHP) tätig.
+                            <br/><br/>
+                            Im Juli 2021 werde ich mein Studium mit dem Bachelor of Arts in Social Sciences abschließen
+                            und mich auf die Suche nach einer neuen Herausforderung machen.</p>
                     </div>
                 </div>
 
@@ -124,13 +151,13 @@ export default function About() {
             </div>
 
 
-            <NextNprogress
+{/*            <NextNprogress
                 color="#4236FF"
                 startPosition={0.3}
                 stopDelayMs={200}
                 height={3}
                 showOnShallow={true}
-            />
+            />*/}
 
 
         </Layout>
