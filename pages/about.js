@@ -38,6 +38,92 @@ export default function About() {
                 </div>
             </div>
 
+            <div className={utilStyles.ausbildung_wrapper}>
+
+                <div className="row">
+                    <h2 className={utilStyles.style_h2}>Ausbildung & Berufserfahrung</h2>
+                    <div className="col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div className="col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div className={utilStyles.experience_wrapper}>
+
+                    <div className="row">
+                        <div className="col-md-5">
+                            <p>Praktikum Web Design</p>
+                        </div>
+                        <div className="col-md-5">
+                            <p>Atikon EDV & Marketing GmbH</p>
+                        </div>
+                        <div className="col-md-2">
+                            <p>2020-2021</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-5">
+                            <p>Tutorium Web-Programmierung</p>
+                        </div>
+                        <div className="col-md-5">
+                            <p>FH OÖ, Campus Hagenberg</p>
+                        </div>
+                        <div className="col-md-2">
+                            <p>2019-2021</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-5">
+                            <p>Kommunikation, Wissen, Medien</p>
+                        </div>
+                        <div className="col-md-5">
+                            <p>FH OÖ, Campus Hagenberg</p>
+                        </div>
+                        <div className="col-md-2">
+                            <p>2018-2021</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-5">
+                            <p>Servicemitarbeiterin</p>
+                        </div>
+                        <div className="col-md-5">
+                            <p>HYPO Vöcklabruck</p>
+                        </div>
+                        <div className="col-md-2">
+                            <p>2017-2018</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-5">
+                            <p>International Business & Marketing</p>
+                        </div>
+                        <div className="col-md-5">
+                            <p>HAK Vöcklabruck</p>
+                        </div>
+                        <div className="col-md-2">
+                            <p>2012-2017</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
             <NextNprogress
                 color="#4236FF"
                 startPosition={0.3}
@@ -46,63 +132,6 @@ export default function About() {
                 showOnShallow={true}
             />
 
-
-            <div id="skill-bar-wrapper">
-                <h2>What I can do</h2>
-                <div className="text-left">
-                    <div className="row">
-                        <div className="col-sm-12 col-lg-6">
-
-                            HTML<span className={utilStyles.float_right}>95%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="95%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-                            CSS / SASS / LESS<span className={utilStyles.float_right}>90%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="90%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-                            JavaScript<span className={utilStyles.float_right}>70%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="70%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-                            PHP<span className={utilStyles.float_right}>50%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="50%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-                        </div>
-                        <div className=".col-sm-12 col-lg-6">
-
-                            Adobe Creative Cloud<span className={utilStyles.float_right}>85%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="85%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-                            SEO<span className={utilStyles.float_right}>80%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="80%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-
-                            Typo3<span className={utilStyles.float_right}>45%</span>
-
-                            <div className={utilStyles.skillbar_container} data-percent="45%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-
-                            Wordpress<span className={utilStyles.float_right}>90%</span>
-                            <div className={utilStyles.skillbar_container} data-percent="90%">
-                                <div className={utilStyles.skills}></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </Layout>
     )

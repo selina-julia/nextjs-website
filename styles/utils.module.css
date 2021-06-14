@@ -71,7 +71,7 @@
 }
 
 .headerbottom {
-    margin: 3% 5%;
+    margin: 10% 5%;
     padding-top: 3%;
     text-align: center;
 }
@@ -352,4 +352,26 @@
 
 .project_item_text {
     margin-top: 5%;
+}
+
+.experience_wrapper > div {
+    border-top: 1px solid rgba(0,0,0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.experience_wrapper p {
+    margin: 3% 0;
+}
+
+.experience_wrapper {
+    margin-top: 6%;
+}
+
+.ausbildung_wrapper {
+    margin-top: 13%;
+}
+
+.ausbildung_wrapper .style_h2 {
+    margin-bottom: 4%;
 }
