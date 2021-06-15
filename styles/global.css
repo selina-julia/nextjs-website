@@ -80,6 +80,10 @@ h3 {
     background: #E6F0F3;
 }
 
+.project_greyblue {
+    background: #EAEDEF;
+}
+
 small {
     font-size: 12px;
     color: var(--text-color)!important;
