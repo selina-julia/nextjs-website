@@ -43,8 +43,11 @@ export default function Post({postData}) {
                             <a target="_blank"> | Link zum Projekt <span className={utilStyles.icon}><FontAwesomeIcon icon={faPaperPlane} /></span></a>
                         </Link>
                     )}
-
                 </div>
+                {postData.team && (
+                    <span>Team: {postData.team}</span>
+                )}
+
                 <div className={utilStyles.project_item_text}>
                     <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
                 </div>

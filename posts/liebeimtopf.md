@@ -1,6 +1,7 @@
 ---
 title: 'Liebe im Topf' date: '2021-04-15' image: '/images/liebeimtopf.png' background: 'project_green' category: 'Web
 design' link: 'https://liebeimtopf.selinajulia.com'
+team: 'Vanessa Riener, Kerstin Hochreiter, Johanna Rammerstorfer'
 ---
 
 Liebe im Topf ist ein Gruppenprojekt der Lehrveranstaltung Advanced CSS. Wie der Name schon verrät, ging es bei dieser
