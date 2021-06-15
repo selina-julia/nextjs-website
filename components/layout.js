@@ -148,7 +148,7 @@ export default function Layout({children, home, about, projects}) {
                             <p>
                                 Falls du noch Fragen hast oder gemeinsam ein Projekt starten möchtest, kannst
                                 du mir jederzeit gerne eine Nachricht schreiben!</p>
-                            <Link href="mailto:selinaschindlauer@gmail.com">
+                            <Link href="mailto:hello@selinajulia.com">
                                 <a className={utilStyles.button}>Nachricht senden</a>
                             </Link>
                         </div>
